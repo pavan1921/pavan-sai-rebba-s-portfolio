@@ -1,5 +1,4 @@
 "use client";
-import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import AnimatedText from "@/components/AnimatedText";

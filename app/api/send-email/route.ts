@@ -33,8 +33,16 @@ export async function POST(request: Request) {
     console.log('Message sent: %s', info.messageId);
 
     return NextResponse.json({ message: 'Email sent successfully!' }, { status: 200 });
-  } catch (error) {
+  } catch (error: unknown) {
     console.error('Error sending email:', error);
-    return NextResponse.json({ message: 'Failed to send email.', error: error.message }, { status: 500 });
+  
+    // Safely extract message if error is an Error object
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+  
+    return NextResponse.json(
+      { message: 'Failed to send email.', error: errorMessage },
+      { status: 500 }
+    );
   }
 }
+  

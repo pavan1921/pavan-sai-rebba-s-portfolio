@@ -15,7 +15,7 @@ import Image from "next/image";
 import ChatBot from "@/components/Chatbot";
 import handshakeImage from "@/public/handshake1.png";
 import botImage from "@/public/chatbot1.png";
-import Footer from "@/components/Footer";
+
 
 export default function Contact() {
   const [chatVisible, setChatVisible] = useState(false);
@@ -37,27 +37,27 @@ export default function Contact() {
     setStatusMessage("");
 
     try {
-      const response = await fetch("/api/send-email", {
+      const response = await fetch("/api/contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, message }),
       });
-
-      const data = await response.json();
-      setStatusMessage(data.message);
-
+    
       if (response.ok) {
         setName("");
         setEmail("");
         setMessage("");
+        setStatusMessage("Email sent successfully!");
+      } else {
+        setStatusMessage("Failed to send email.");
       }
     } catch (error) {
-      setStatusMessage("Failed to send email.");
+      console.error("Email sending error:", error); // ✅ now error is used
+      setStatusMessage("Something went wrong while sending email.");
     } finally {
-      setIsSending(false);
+      setIsSending(false); // ✅ correct camelCase
     }
+    
   };
 
   return (
