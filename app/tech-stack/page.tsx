@@ -82,12 +82,12 @@ export default function TechStacksPage() {
     {/* Ensure timeline moves left */}
     <VerticalTimeline className="items-start">
       {[
-        { date: "2020", title: "Started Competitive Programming", desc: "Learned C, Java, and Python for problem-solving.", icon: <SiC className="text-white text-2xl" />, bg: "#1e40af" },
-        { date: "2021", title: "Explored MERN Stack & Built Projects", desc: "Worked with MongoDB, Express.js, React, and Node.js.", icon: <FaReact className="text-white text-2xl" />, bg: "#2563eb" },
-        { date: "2022", title: "Worked on Python Full Stack Development", desc: "Built web applications using Django, Flask, and MySQL.", icon: <SiDjango className="text-white text-2xl" />, bg: "#16a34a" },
-        { date: "2023", title: "Developed Java Full Stack Applications", desc: "Gained experience with Spring Boot, Hibernate, and PostgreSQL.", icon: <FaJava className="text-white text-2xl" />, bg: "#dc2626" },
+        { date: "2022", title: "Started Competitive Programming", desc: "Learned C, Java, and Python for problem-solving.", icon: <SiC className="text-white text-2xl" />, bg: "#1e40af" },
+        { date: "2023", title: "Explored MERN Stack & Built Projects", desc: "Worked with MongoDB, Express.js, React, and Node.js.", icon: <FaReact className="text-white text-2xl" />, bg: "#2563eb" },
+        { date: "2023", title: "Worked on Python Full Stack Development", desc: "Built web applications using Django, Flask, and MySQL.", icon: <SiDjango className="text-white text-2xl" />, bg: "#16a34a" },
+        { date: "2024", title: "Developed Java Full Stack Applications", desc: "Gained experience with Spring Boot, Hibernate, and PostgreSQL.", icon: <FaJava className="text-white text-2xl" />, bg: "#dc2626" },
         { date: "2024", title: "Dived into AI, ML & Deep Learning", desc: "Implemented models with TensorFlow, PyTorch, and OpenCV.", icon: <FaPython className="text-white text-2xl" />, bg: "#facc15" },
-        { date: "2024", title: "Mastered DevOps & Tech Tools", desc: "Worked with Git, Docker, Kubernetes for development & deployment.", icon: <FaGitAlt className="text-white text-2xl" />, bg: "#f97316" }
+        { date: "2025", title: "Mastered DevOps & Tech Tools", desc: "Worked with Git, Docker, Kubernetes for development & deployment.", icon: <FaGitAlt className="text-white text-2xl" />, bg: "#f97316" }
       ].map((item, index) => (
         <VerticalTimelineElement 
           key={index}

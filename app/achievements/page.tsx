@@ -18,11 +18,11 @@ const certifications = [
     link: "https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=zdnwveydt40WE/pCk6Jm9Ta6kSJcbLTx27Ip5pTOHfKB+S5v9l3vyyrYNWyTQUVr",
   },
   {
-    title: "Multicloud Network Associate",
-    image: "/avtrix.png",
+    title: "Salesforce Platform Developer 1",
+    image: "/salesforcepd1.png",
     width: 300,
     height: 300,
-    link: "https://www.credly.com/badges/ff0ecdfd-fbc0-4660-9b24-11be70b127c8",
+    link: "https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=zdnwveydt40WE/pCk6Jm9Ta6kSJcbLTx27Ip5pTOHfKB+S5v9l3vyyrYNWyTQUVr",
   },
   {
     title: "Oracle Cloud Infrastructure 2023 Certified Data Science Professional",
@@ -82,26 +82,9 @@ export default function Certifications() {
       {/* Main Content */}
       <div className="min-h-screen bg-gray-950 flex flex-col items-center justify-center p-10 ml-16">
         {/* 🏆 Animated Heading */}
-        <motion.h1
-          className="text-6xl font-extrabold mb-10 tracking-wide text-center"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          <motion.span
-            className="bg-gradient-to-r from-blue-400 via-purple-500 to-blue-400 
-                       bg-clip-text text-transparent"
-            animate={{
-              textShadow: [
-                "0px 0px 15px rgba(142, 156, 245, 0.7)",
-                "0px 0px 20px rgba(176, 142, 245, 0.6)",
-              ],
-            }}
-            transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
-          >
+       <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-blue-400 animate-gradient-x mb-8">
             🏆 My Achievements 🏆
-          </motion.span>
-        </motion.h1>
+       </h1>
 
         {/* 📜 Certifications Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
