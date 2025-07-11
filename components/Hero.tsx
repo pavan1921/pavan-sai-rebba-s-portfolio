@@ -61,7 +61,7 @@ export default function Hero() {
 
         {/* Desktop Profile Image (Unchanged) */}
         <motion.div
-          className="relative w-[500px] h-[500px] md:w-[600px] md:h-[500px] ml-[-80px] md:ml-[-100px] hidden md:block"
+          className="relative w-500px] h-[500px] md:w-[600px] md:h-[550px] ml-[-80px] md:ml-[-100px] hidden md:block"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
