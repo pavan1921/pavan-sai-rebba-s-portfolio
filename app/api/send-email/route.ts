@@ -45,13 +45,4 @@ export async function POST(request: Request) {
     );
   }
 }
-export function GET() {
-  return NextResponse.json({ message: "Method Not Allowed" }, { status: 405 });
-}
-export function PUT() {
-  return NextResponse.json({ message: "Method Not Allowed" }, { status: 405 });
-}
-export function DELETE() {
-  return NextResponse.json({ message: "Method Not Allowed" }, { status: 405 });
-}
   
